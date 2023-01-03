@@ -10,12 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const FirstScreen()
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const FirstScreen());
   }
 }
 
@@ -33,8 +32,7 @@ class FirstScreen extends StatelessWidget {
               icon: const Icon(
                 Icons.search,
                 color: Colors.white,
-              )
-          )
+              ))
         ],
         leading: IconButton(
           icon: const Icon(
@@ -44,8 +42,14 @@ class FirstScreen extends StatelessWidget {
           onPressed: () {},
         ),
       ),
-      body: const Center(
-        child: Text('Hello world!'),
+      body: Container(
+        color: Colors.blue,
+        padding: const EdgeInsets.all(10),
+        margin: const EdgeInsets.all(10),
+        child: const Text(
+          'Hi',
+          style: TextStyle(fontSize: 40),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
