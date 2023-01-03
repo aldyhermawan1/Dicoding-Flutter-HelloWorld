@@ -66,7 +66,32 @@ class FirstScreen extends StatelessWidget {
                 Text('Lorem Ipsum')
               ],
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(
+                  child: const Text('Elevated'),
+                  onPressed: () {},
+                ),
+                TextButton(
+                  child: const Text('Text'),
+                  onPressed: () {},
+                ),
+                OutlinedButton(
+                  child: const Text('Outlined'),
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: const Icon(Icons.smart_button),
+                  tooltip: 'Icon',
+                  onPressed: () {},
+                ),
+              ],
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
