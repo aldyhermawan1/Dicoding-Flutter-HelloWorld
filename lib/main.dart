@@ -42,23 +42,32 @@ class FirstScreen extends StatelessWidget {
           onPressed: () {},
         ),
       ),
-      body: Container(
-        decoration: BoxDecoration(
-          color: Colors.red,
-          border: Border.all(color: Colors.green, width: 3),
-          borderRadius: BorderRadius.circular(10),
-          boxShadow: const [
-            BoxShadow(
-              color: Colors.black,
-              offset: Offset(3, 6),
-              blurRadius: 10,
-            )
-          ]
-        ),
-        child: const Text(
-          'Hi',
-          style: TextStyle(fontSize: 40),
-        ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: const [
+                Icon(Icons.share),
+                Icon(Icons.thumb_up),
+                Icon(Icons.thumb_down),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              children: const [
+                Text(
+                  'Judul',
+                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                ),
+                Text('Lorem Ipsum')
+              ],
+            ),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
