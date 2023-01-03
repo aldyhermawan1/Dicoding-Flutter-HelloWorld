@@ -63,6 +63,7 @@ class _FirstScreenState extends State<FirstScreenStateful> {
                 ],
               ),
             ),
+            const Text("BUTTON", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
             Padding(
               padding: const EdgeInsets.all(16),
               child: Row(
@@ -105,6 +106,7 @@ class _FirstScreenState extends State<FirstScreenStateful> {
                 },
               ),
             ),
+            const Text("TEXT FIELD", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
             Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
@@ -162,6 +164,7 @@ class _FirstScreenState extends State<FirstScreenStateful> {
                 ],
               ),
             ),
+            const Text("SWITCH", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
             Padding(
               padding: const EdgeInsets.all(16),
               child: Switch(
@@ -174,6 +177,7 @@ class _FirstScreenState extends State<FirstScreenStateful> {
                 },
               ),
             ),
+            const Text("RADIO", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
             Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
@@ -221,6 +225,7 @@ class _FirstScreenState extends State<FirstScreenStateful> {
                 ],
               ),
             ),
+            const Text("CHECKBOX", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
             Padding(
               padding: const EdgeInsets.all(16),
               child: ListTile(
@@ -235,6 +240,24 @@ class _FirstScreenState extends State<FirstScreenStateful> {
                   },
                 ),
               ),
+            ),
+            const Text("IMAGE", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  Image.network(
+                    'https://picsum.photos/200/300',
+                    width: 200,
+                    height: 300,
+                  ),
+                  Image.asset(
+                    'images/android.png',
+                    width: 200,
+                    height: 200,
+                  )
+                ],
+              )
             ),
           ],
         ),
