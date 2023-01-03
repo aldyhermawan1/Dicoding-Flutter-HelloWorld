@@ -259,6 +259,37 @@ class _FirstScreenState extends State<FirstScreenStateful> {
                 ],
               )
             ),
+            const Text("CUSTOM FONTS", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+            Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: const [
+                    Text(
+                      'RobotoMono',
+                      style: TextStyle(
+                        fontFamily: 'RobotoMono',
+                        fontSize: 24,
+                      ),
+                    ),
+                    Text(
+                      'RobotoMono Italic',
+                      style: TextStyle(
+                        fontFamily: 'RobotoMono',
+                        fontSize: 24,
+                        fontStyle: FontStyle.italic
+                      ),
+                    ),
+                    Text(
+                      'RobotoMono Bold',
+                      style: TextStyle(
+                        fontFamily: 'RobotoMono',
+                        fontSize: 24,
+                        fontWeight: FontWeight.w700
+                      )
+                    ),
+                  ],
+                )
+            ),
           ],
         ),
       ),
