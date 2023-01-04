@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FirstScreenStateless extends StatelessWidget {
-  const FirstScreenStateless({Key? key}) : super(key: key);
+  final String message;
+  const FirstScreenStateless(this.message, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +19,12 @@ class FirstScreenStateless extends StatelessWidget {
         ],
         leading: IconButton(
           icon: const Icon(
-            Icons.menu,
+            Icons.arrow_back,
             color: Colors.white,
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
       ),
       body: Column(
@@ -40,12 +43,12 @@ class FirstScreenStateless extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
-              children: const [
-                Text(
+              children:  [
+                const Text(
                   'Judul',
                   style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
                 ),
-                Text('Lorem Ipsum')
+                Text(message),
               ],
             ),
           ),

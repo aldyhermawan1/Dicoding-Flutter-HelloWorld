@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/stateful_screen.dart';
+import 'package:hello_world/landing_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +15,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const FirstScreenStateful());
+        home: const LandingPage());
   }
 }

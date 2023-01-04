@@ -15,7 +15,6 @@ class _FirstScreenState extends State<FirstScreenStateful> {
   bool checkBoxState = false;
 
   final List numberList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-
   final TextEditingController _controller = TextEditingController();
 
   @override
@@ -33,14 +32,25 @@ class _FirstScreenState extends State<FirstScreenStateful> {
         ],
         leading: IconButton(
           icon: const Icon(
-            Icons.menu,
+            Icons.arrow_back,
             color: Colors.white,
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
       ),
       body: ListView(
         children: [
+          const Center(
+            child: Text(
+              "ROW & COLUMN",
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.all(16),
             child: Row(
