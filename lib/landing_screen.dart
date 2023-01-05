@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/expanded_flexible_screen.dart';
 import 'package:hello_world/rainbow_screen.dart';
+import 'package:hello_world/responsive_list_screen.dart';
+import 'package:hello_world/responsive_screen.dart';
 import 'package:hello_world/stateful_screen.dart';
 import 'package:hello_world/stateless_screen.dart';
 
@@ -17,6 +19,8 @@ class _LandingPageState extends State<LandingPage> {
     'Stateful',
     'Rainbow',
     'Expanded / Flexible',
+    'Responsive',
+    'Responsive List'
   ];
 
   @override
@@ -44,6 +48,10 @@ class _LandingPageState extends State<LandingPage> {
                         return const Rainbow();
                       case 3:
                         return const ExpandedFlexiblePage();
+                      case 4:
+                        return const ResponsivePage();
+                      case 5:
+                        return const ResponsiveListPage();
                       default:
                         return const LandingPage();
                     }
