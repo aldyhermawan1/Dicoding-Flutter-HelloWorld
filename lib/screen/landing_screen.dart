@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/expanded_flexible_screen.dart';
-import 'package:hello_world/rainbow_screen.dart';
-import 'package:hello_world/responsive_list_screen.dart';
-import 'package:hello_world/responsive_screen.dart';
-import 'package:hello_world/stateful_screen.dart';
-import 'package:hello_world/stateless_screen.dart';
+import 'package:hello_world/screen/expanded_flexible_screen.dart';
+import 'package:hello_world/screen/rainbow_screen.dart';
+import 'package:hello_world/screen/responsive_list_screen.dart';
+import 'package:hello_world/screen/responsive_screen.dart';
+import 'package:hello_world/screen/stateful_screen.dart';
+import 'package:hello_world/screen/stateless_screen.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({Key? key}) : super(key: key);
