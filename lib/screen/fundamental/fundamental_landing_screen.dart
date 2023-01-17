@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/screen/fundamental/constraint_screen.dart';
+import 'package:hello_world/screen/fundamental/gesture_screen.dart';
 import 'package:hello_world/screen/fundamental/navigation_routing_screen.dart';
 
 class FundamentalLandingScreen extends StatelessWidget {
@@ -30,6 +31,14 @@ class FundamentalLandingScreen extends StatelessWidget {
                 }));
               },
               child: const Text('Constraint'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const GestureScreen();
+                }));
+              },
+              child: const Text('Gesture'),
             ),
           ],
         ),
