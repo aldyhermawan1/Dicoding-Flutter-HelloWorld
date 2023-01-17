@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/screen/fundamental/constraint_screen.dart';
 import 'package:hello_world/screen/fundamental/navigation_routing_screen.dart';
 
 class FundamentalLandingScreen extends StatelessWidget {
@@ -21,6 +22,14 @@ class FundamentalLandingScreen extends StatelessWidget {
                 }));
               },
               child: const Text('Navigation & Routing'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const ConstraintScreen();
+                }));
+              },
+              child: const Text('Constraint'),
             ),
           ],
         ),
